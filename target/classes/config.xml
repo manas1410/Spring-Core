@@ -8,19 +8,40 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <!-- 1st Bean-->
     <bean class="org.example.Student" name="student1">
+
         <property name="studentId">
-            <value> 1901106416</value>
+            <value>1901106429</value>
         </property>
 
-        <property name="studentName">
-            <value>Manas Ranjan Munda</value>
+        <property name="studentName" >
+            <value>Sanjay Kumar Nayak</value>
         </property>
 
         <property name="studentAddress">
-            <value>Rourkela</value>
+            <value>Balugoun</value>
         </property>
 
     </bean>
+
+    <!-- 2nd Bean-->
+    <bean class="org.example.Student" name="student2">
+
+        <property name="studentId" value="1901106451"/>
+
+        <property name="studentName" value="Risabh Kedia"/>
+
+        <property name="studentAddress" value= "Cuttack"/>
+
+    </bean>
+
+    <!-- 3st Bean-->
+    <bean class="org.example.Student" name="student3"
+          p:studentId="1901106416" p:studentName="Manas Ranjan Munda"
+          p:studentAddress="Rourkela"
+    />
+
 
 </beans>
